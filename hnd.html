@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course materials</title>
+    <link rel="stylesheet" href="css/handout.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+TAS+Beginner:wght@500&family=Libre+Franklin:wght@100&family=Lobster&family=Mochiy+Pop+One&family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <h3>COURSE MATERIALS</h3>
+    </header>
+    <div class="logo">
+        <img src="SAF.png" alt="saf logo">
+    </div>
+    <div class="slide-2">
+        <h4><span class="auto-type"></span></h4>
+    </div>
+            <main>
+                <div class="content">
+                    <h2>Good News</h2>
+                    <hr width="60px" color="grey">
+                    <P>Buying your course materials have been made easier and much more cheaper. Students can now have the handouts on your mobile and carry your academic environment with you.</P>
+
+                    <section class="course">
+                        <h3>Avaliable Courses and Prices</h3>
+                        <hr width="60px" color="grey">
+                        <table>
+                            <tr>
+                                <th>Coursse Code</th>
+                                <th>Course Name</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td>COM 225</td>
+                                <td>Introduction to Web development</td>
+                                <td>#300</td>
+                            </tr>
+                            <tr>
+                                <td>COM 221</td>
+                                <td>C++ Programming Lnaguage</td>
+                                <td>#350</td>
+                            </tr>
+                            <tr>
+                                <td>COM 226</td>
+                                <td>File Management and Organisation</td>
+                                <td>#300</td>
+                            </tr>
+                            <tr>
+                                <td>COM 227</td>
+                                <td>Introduction to Digital Electronics</td>
+                                <td>#300</td>
+                            </tr>
+                            <tr>
+                                <td>MTH 221</td>
+                                <td>Complex Number</td>
+                                <td>#350</td>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                <section class="how">
+                    <h3>How to Buy Handouts?</h3>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p>Login to the Department Portal</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p>Enter your information on this page to confirm your purchase with the department.</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p>Make payment into the appropriate account below</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p>Account Number: 0809650505
+                                <br>Account Name: Adeseun Michael.
+                                <br>Bank Name: Access Bank
+                            </p>
+                        </div>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p>Account Number: 0155301394
+                                <br>Account Name: Ojebola michael.
+                                <br>Bank Name: Union Bank
+                            </p>
+                        </div>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p>Choose an active WhatsApp number or E-mial that the materials will be sent to.</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p>Confirm you recieved the desired material in less than 24hours.</p>
+                        </div>
+                        <div class="list">
+                            <img src="img/confirm-icon.png">
+                            <p> Contact your department for any complaints.</p>
+                        </div>
+
+                </section>
+                  <!--form works after linking appropriate host-->
+                    <div class="form">
+                        <p>FILL THIS SECTION TO BUY HANDOUT</p>
+                        <hr width="60px" color="grey">
+                        <form onsubmit="endemail(); reset();" action="hnd.html" method="post"> <!-- email wont send because its a dummy site -->
+                            <input type="text" name="name" id="name" placeholder="Full Name" required>
+                            <input type="text" name="matric-num" id="matric-num" placeholder="Matric Number" required>
+                            <input type="text" name="course" id="course" placeholder="Name of Course" required>
+                            <input type="email" id="email" placeholder="E-mial" required>
+                            <input type="tel" id="number" placeholder="WhatsApp Number" required>
+                            <input type="text" id="acc" placeholder="Account Name" required>
+                            <input type="text" id="bank" placeholder="Acount Number and Bank" required>
+                            <button type="submit">Submit</button>
+                       </form>
+                    </div>
+                    
+                  
+           
+            <footer>
+                <div class="end-link">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="#">THE DEPARTMENT</a></li>
+                        <li><a href="student-page.html">STUDENTS' PAGE</a></li>
+                    </ul>
+                </div>
+        
+                
+        
+                <div class="social">
+                    <ul>
+                        <li><a href="#" class="fa fa-facebook" class="icon"></a></li>
+                        <li><a href="#" class="fa fa-twitter" class="icon"></a></li>
+                        <li><a href="#" class="fa fa-google" class="icon"></a></li>
+                    </ul>
+                </div>
+                <p class="copyright">Copyright: SAF Poly, Computer Science</p>
+            </footer>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+           
+                function sendemail(){
+                  Email.send({
+                  Host : "localhost",//to ensure this functions, enter valid host..
+                  Username : "root",
+                  Password : "password",
+                  To : 'ojebola.michael00@gmail.com',
+                  From : document.getElementById("email").value,
+                  Subject : "Purchase of Course Materials",
+                  Body : "Full Name: " + document.getElementById("name").value
+                         +  "<br> Matric Number: " + document.getElementById("matric-num").value
+                         +  "<br> Name of Course: " + document.getElementById("course").value
+                         +  "<br> E-mail: " + document.getElementById("e-mail").value 
+                         +  "<br> WhatsApp No: " + document.getElementById("number").value
+                         +  "<br> Account Name: " + document.getElementById("acc").value
+                         +  "<br> Account Number and Bank: " + document.getElementById("bank").value 
+                  }).then(
+                  message => alert("Information succesfully submitted")
+                  );
+              }
+            </script>
+    
+</body>
+</html>

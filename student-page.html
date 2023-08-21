@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer_science-students_page</title>
+    <link rel="stylesheet" href="css/student.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+TAS+Beginner:wght@500&family=Libre+Franklin:wght@100&family=Lobster&family=Mochiy+Pop+One&family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h3>STUDENTS' PAGE</h3>
+        <div class="menu"><img class="m" src="img/Menu-alt-2-01.png" alt="menu" aria-controls="menulist"></div>
+        <nav>
+            <ul class="menulist" id="menulist" data-visible="false">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="dept.html">The Department</a></li>
+                <li><a href="#">Students' Page</a></li>
+            </ul>
+       
+    </header>
+    <div class="logo">
+        <img src="SAF.png" alt="saf logo">
+    </div>
+
+     <main>
+        <div class="slide">
+            <div class="slide-text"><h3>EDUCATION? MY PRIDE!!</h3></div>
+        </div>
+        <div class="slide-2">
+            <h4><span class="auto-type"></span></h4>
+        </div>
+
+        
+        <section class="news-nav">
+            <ul>
+                <li><a href="#reg">REGISTRATION</a></li>
+                <li><a href="#ass">ASSIGNMENT</a></li>
+                <li><a href="#adv">ADVERTISEMENT</a></li>
+            </ul>
+        </section>
+
+        <section class="news">
+            <section class="space">
+
+            </section>
+            <div id="reg" class="div">
+                <h2>COURSE REGISTRAION</h2>
+                <p>You can now register for this semester from your mobile. The adminstators have made it mandatory that before registration from this site, students must have cleared the previous semester's registration
+                    <br>Payment of school fees and course registration is avaliable.
+                    <br>NOTE: If site does not work, please register manually.
+                </p>
+                <ul>
+                    <li><h3>TUITION FEE PAYMENT</h3>
+                    <p>Price: #35,000.00
+                        <br><span class="btn" style="padding: 3px 30px; cursor: pointer;" onclick="openPay()">Pay</span></p>
+                        <div class="pay" id="pay">
+                            <h4>Tuition</h4>
+                            <p><u>Account Name</u>
+                            <br><span>SAF Polytechnic Foundation</span></p>
+                            <p><u>Account Number</u>
+                            <br><span>2033738657</span></p>
+                            <p><u>Bank Name</u>
+                            <br><span>First Bank Of Nigeria</span></p>
+                            <hr width="50%" style="padding: 1px; background-color: #53dee9;">
+                            <p>If you pay from your mobile bank, ensure to print out the receipt with your Name and Matric number as the narration</p>
+                            <span class="cancle" onclick="closePay()">X</span>
+                        </div>
+                    </li>
+                    <li><h3>Courses registration</h3>
+                        <p>All Students are expected to register before the end of the semester and must have record with the institution
+                            <br> <span class="btn" style="padding: 3px 30px; cursor: pointer;">Register</span>
+                        </p></li>
+                </ul>
+            </div>
+       
+         
+            <div id="ass" class="div">
+                <h2>ACADEMICS ENVIRONMENT</h2>
+                <p>The academic environment is now a lot closer to you. Did you miss a class session and you do not know the assignment or the topic taught? Do need the to submit an assignment? Do you need any material?
+                    <br>All your questions have been solved HERE!!!
+                </p>
+                <ul>
+                    <li><h3>TODAY'S ACTIVITIES</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt nobis ratione beatae itaque dolorum aspernatur. Omnis alias voluptates maxime repellat asperiores, labore quod explicabo ea iure dolorem, nemo iusto?</p></li>
+                    <li><h3>LECTURE RECAP</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt nobis ratione beatae itaque dolorum aspernatur. Omnis alias voluptates maxime repellat asperiores, labore quod explicabo ea iure dolorem, nemo iusto?</p></li>
+                    <li><h3>ASSIGNMENT</h3>
+                            <p>COM 201: Write a java program to calculate determinant of a matrix.
+                           <br><h4 class="s btn" aria-controls="submit">Submit</h4></p>
+ <!--Form only works after hosting a valid host, enter valid host into buttom script-->
+                            <form onsubmit="sendemail(); reset();" class="submit"   id="submit" data-visible="false">
+                                <input type="text" id="name" placeholder="Name" required>
+                                <input type="email" id="email" placeholder="E-mial" required>
+                                <input type="tel" id="number" placeholder="Phone Number" required>
+                                <textarea id="message" rows="3" placeholder="Message" required></textarea>
+                                <input type="file" id="file" >
+                                <button type="submit">SUBMIT</button>
+                           </form>
+                           <p>COM 215: Explain with the use of real life scenaro, the term "Data Transition".
+                            <br><h4 class="s2 btn" aria-controls="submit-2">Submit</h4></p>
+  <!--Form only works after hosting a valid host, enter valid host into buttom script-->
+                             <form onsubmit="sendemail(); reset();" class="submit-2"   id="submit-2" data-visible-2="false">
+                                 <input type="text" id="name" placeholder="Name" required>
+                                 <input type="email" id="email" placeholder="E-mial" required>
+                                 <input type="tel" id="number" placeholder="Phone Number" required>
+                                 <textarea id="message" rows="3" placeholder="Message" required></textarea>
+                                 <input type="file" id="file" >
+                                 <button type="submit">SUBMIT</button>
+                            </form>
+                    </li>
+                    <li><h3>COURSE MATERIAL</h3>
+                        <p>All courses offered by students of the Department are now avaliable for purchase. All students are expected to have the material during each class session to go along with the lecturers</p>
+                        <a href="hnd.html" class="btn">Buy Handout</a>
+                    </li>
+                    <li><h3>WEEKLY SUMMARY</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi incidunt nobis ratione beatae itaque dolorum aspernatur. Omnis alias voluptates maxime repellat asperiores, labore quod explicabo ea iure dolorem, nemo iusto?</p></li>
+    
+            </div>
+   
+        
+            <div id="adv" class="div">
+                <h2>ADVERTISEMENT</h2>
+                <p>Reach out to your fellow students and the institution at large. The internet has power to reach more potential customers.
+                    <br>To place your ads, contact 09039444734, 09061910124 or meet the HOD.
+                </p>
+                    <h3>MUHAMMED ALAUSA ASO OKE</h3>
+                    <p>Muhhamed Alausa Home of Aso-Oke dealer in all kinds of Aso-Oke such as: Sayan, Etu, Alari, Cone to Cone, Plain, Two-Tone, Double Weaving and much more...</p>
+                    <div class="gal-photo">
+                        <div class="img"><img src="img/ads1.jpg" alt="lecture room" ></div>
+                       
+                    </div>
+
+            </div>
+            <section class="space">
+
+            </section>
+    </section>
+    
+
+        <footer>
+            <div class="end-link">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="dept.html">THE DEPARTMENT</a></li>
+                    <li><a href="#">STUDENTS' PAGE</a></li>
+                </ul>
+            </div>
+
+            
+
+            <div class="social">
+                <ul>
+                    <li><a href="#" class="fa fa-facebook" class="icon"></a></li>
+                    <li><a href="#" class="fa fa-twitter" class="icon"></a></li>
+                    <li><a href="#" class="fa fa-google" class="icon"></a></li>
+                </ul>
+            </div>
+            <p class="copyright">Copyright: SAF Poly, Computer Science</p>
+        </footer>
+    </main>
+
+
+    <!--JavaScript-->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            const menulist = document.querySelector(".menulist");
+            const navToggle = document.querySelector(".m");
+    
+            navToggle.addEventListener("click", () => {
+                const visibility = menulist.getAttribute("data-visible");
+    
+                console.log(visibility);
+                if(visibility === "false"){
+                    menulist.setAttribute("data-visible", true);
+                }else{
+                    menulist.setAttribute("data-visible", false);
+                }
+            })
+
+            const formList = document.querySelector(".submit");
+            const formToggle = document.querySelector(".s");
+    
+            formToggle.addEventListener("click", () => {
+                const visibility = formList.getAttribute("data-visible");
+    
+                console.log(visibility);
+                if(visibility === "false"){
+                    formList.setAttribute("data-visible", true);
+                }else{
+                    formList.setAttribute("data-visible", false);
+                }
+            })
+       
+            const formList2 = document.querySelector(".submit-2");
+            const formToggle2 = document.querySelector(".s2");
+    
+            formToggle2.addEventListener("click", () => {
+                let visibility2 = formList2.getAttribute("data-visible-2");
+    
+                console.log(visibility2);
+                if(visibility2 === "false"){
+                    formList2.setAttribute("data-visible-2", true);
+                }else{
+                    formList2.setAttribute("data-visible-2", false);
+                }
+            })
+    
+            var typed = new Typed(".auto-type", {
+                strings: ["STUDENTS' PAGE", "COURSE REGISTRATION", "ASSIGNMENT","ADVERTISEMENT"],
+                typeSpeed: 150,
+                backSpeed: 100,
+                loop: true 
+            })
+        </script>
+        <script>
+              function sendemail(){
+                Email.send({
+                Host : "smtp.gmail.com",//to ensure this functions, enter valid host..
+                Username : "username",
+                Password : "password",
+                To : 'ojebola.michael00@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "Student Assignment",
+                Body : "Name: " + document.getElementById("name").value
+                       +  "<br> Email: " + document.getElementById("email").value
+                       +  "<br> Phone No: " + document.getElementById("nuumber").value
+                       +  "<br> Message: " + document.getElementById("message").value 
+                       + "<br> File:" + document.getElementById("file").value
+                }).then(
+                message => alert("Assignment succesfully submitted")
+                );
+            }
+        </script>
+        <script>
+            const pay = document.getElementById("pay");
+            function openPay() {
+                pay.style.display = "block";
+            }
+            function closePay() {
+                pay.style.display = "none";
+            }
+        </script>
+</body>
+</html>
